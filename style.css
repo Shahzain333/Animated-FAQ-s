@@ -1,9 +1,3 @@
-/* *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-} */
-
 body {
     background-color: rgb(255,215,255);
     padding: 40px;
@@ -17,17 +11,30 @@ body {
     margin-bottom: 16px;
     border-radius: 4px;
     box-shadow: 1px 1px 5px rgb(255, 205, 255);
+    cursor: pointer;
 }
 
 .questions {
-    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
+.icon {
+    margin-right: 16px;
+    transition: transform 0.2s;
+}
 
+.icon.active {
+    transform: rotate(-180deg);
+}
 
-
-
-
+.answer {
+    color: #666;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s;
+}
 
 
 
